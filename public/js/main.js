@@ -21,7 +21,7 @@ async function deleteItem(){
             method: 'delete',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
-              'itemFromJS': todoId
+              'itemIdFromJS': todoId
             })
           })
         const data = await response.json()
@@ -41,7 +41,7 @@ async function markComplete(){
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
-                'itemFromJS': todoId
+                'itemIdFromJS': todoId
             })
           })
         const data = await response.json()
@@ -61,7 +61,7 @@ async function markUncomplete(){
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
-                'itemFromJS': todoId
+                'itemIdFromJS': todoId
             })
           })
         const data = await response.json()
